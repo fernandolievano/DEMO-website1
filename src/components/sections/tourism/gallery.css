@@ -1,0 +1,79 @@
+/* Main CSS */
+
+.masonry>.masonry-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.masonry>.masonry-item>img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.masonry {
+  display: grid;
+  grid-auto-rows: 144px;
+  gap: 8px;
+}
+
+/* default */
+.masonry.masonry-default {
+  grid-template-columns: 1fr 1fr;
+}
+
+.masonry-default .masonry-item,
+.masonry-default .masonry-item:nth-child(12) {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+.masonry-default .masonry-item:nth-child(4) {
+  grid-column: auto;
+  grid-row: span 2;
+}
+
+.masonry-default .masonry-item:nth-child(8),
+.masonry-default .masonry-item:nth-child(14) {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+@media screen and (min-width: 768px) {
+  .masonry.masonry-default {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .masonry-default .masonry-item:nth-child(5) {
+    grid-column: span 1;
+    grid-row: span 2;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .masonry.masonry-default {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .masonry-default .masonry-item:nth-child(4),
+  .masonry-default .masonry-item:nth-child(5),
+  .masonry-default .masonry-item:nth-child(8),
+  .masonry-default .masonry-item:nth-child(14) {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  .masonry-default .masonry-item:nth-child(5) {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+
+  .masonry-default .masonry-item:nth-child(9) {
+    grid-column: span 1;
+    grid-row: span 2;
+  }
+}
+
+/* default */

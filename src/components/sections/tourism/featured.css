@@ -1,0 +1,21 @@
+#tourism-featured-bullets {
+  @apply absolute inset-0 bottom-0 top-auto z-10 flex items-center justify-center w-full gap-4 pt-4 pb-12 h-fit lg:w-1/2 lg:left-auto lg:pb-24 lg:max-w-[500px] xl:max-w-[577px] 2xl:max-w-[768px];
+}
+
+.tourism-featured-bullet {
+  @apply w-4 h-4 bg-transparent border rounded-full cursor-pointer border-gris-2;
+}
+
+.tourism-featured-bullet--active {
+  @apply bg-white;
+}
+
+.tourism .swiper-button-prev,
+.tourism .swiper-button-next {
+  @apply z-10 px-1 bg-naranja-2 w-[24px] h-[32px] text-center flex items-center justify-center text-marron-1 hover:bg-marron-1 hover:text-naranja-2 transition-colors;
+}
+
+.tourism .swiper-button-prev::after,
+.tourism .swiper-button-next::after {
+  @apply mx-auto my-auto text-xs font-bold;
+}

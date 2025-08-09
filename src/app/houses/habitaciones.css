@@ -1,0 +1,9 @@
+.habitaciones-card--open {
+  max-height: calc(100% - 16px);
+  /* top: 16px; */
+}
+
+.habitaciones-card--closed {
+  max-height: 240px;
+  /* top: auto; */
+}

@@ -1,0 +1,12 @@
+.habitaciones-slider .habitaciones-card--featured-cover {
+  @apply absolute top-0 left-0 w-full h-[144px];
+  background: linear-gradient(246.13deg, rgba(255, 253, 251, 0) 43.98%, #BF975C 95.24%);
+}
+
+.habitaciones-slider .swiper-slide {
+  @apply transition-opacity opacity-20 lg:opacity-100 min-[1105px]:opacity-20;
+}
+
+.habitaciones-slider .swiper-slide-fully-visible {
+  @apply opacity-100;
+}

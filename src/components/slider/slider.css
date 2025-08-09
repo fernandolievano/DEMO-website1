@@ -1,0 +1,51 @@
+.slider .swiper-slide {
+  @apply w-full max-w-[70vw] 2xl:max-w-[60vw] flex items-end h-[460px] lg:h-[408px] 2xl:h-[460px];
+}
+
+.slider .swiper-slide-active {
+  @apply h-[460px] lg:h-[408px] 2xl:h-[460px];
+}
+
+.slider .swiper-slide img {
+  @apply object-cover w-full mx-0 opacity-50 h-[400px] transition-all duration-200 ease-in-out lg:h-[312px] 2xl:h-[400px];
+}
+
+.slider .swiper-slide-active img {
+  @apply opacity-100 h-[460px] transition-all duration-200 ease-in-out lg:h-[408px] 2xl:h-[460px];
+}
+
+.slider .swiper-button-prev,
+.slider .swiper-button-next {
+  @apply flex items-center justify-center w-8 h-8 px-1 pb-1 text-center transition-colors border rounded-full bg-main-bg text-marron-1 border-marron-1 hover:bg-marron-0 hover:border-marron-0 hover:text-main-bg;
+}
+
+.slider .swiper-button-prev::after,
+.slider .swiper-button-next::after {
+  @apply w-4 h-4 my-auto text-sm;
+}
+
+.slider .swiper-button-prev {
+  @apply pr-1.5;
+}
+
+.slider .swiper-button-next {
+  @apply pl-1.5;
+}
+
+.habitaciones .swiper-button-prev,
+.habitaciones .swiper-button-next {
+  @apply flex items-center justify-center w-8 h-8 px-1 pb-1 text-center transition-colors bg-white border rounded-full text-marron-1 border-marron-1 hover:bg-marron-0 hover:border-marron-0 hover:text-main-bg;
+}
+
+.habitaciones .swiper-button-prev::after,
+.habitaciones .swiper-button-next::after {
+  @apply w-4 h-4 my-auto text-sm;
+}
+
+.habitaciones .swiper-button-prev {
+  @apply pr-1.5;
+}
+
+.habitaciones .swiper-button-next {
+  @apply pl-1.5;
+}

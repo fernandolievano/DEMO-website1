@@ -1,0 +1,19 @@
+.nosotros {
+  @apply px-0 pt-16 lg:pb-0;
+}
+
+.nosotros .slider .swiper-slide,
+.nosotros .slider .swiper-slide-active,
+.nosotros .slider .swiper-slide img,
+.nosotros .slider .swiper-slide-active img {
+  @apply h-[460px] lg:h-[408px] 2xl:h-[460px];
+}
+
+.nosotros .slider .swiper-slide {
+  @apply w-full max-w-[100vw] sm:max-w-[75vw] 2xl:max-w-[70vw];
+}
+
+.nosotros .slider .swiper-slide img,
+.nosotros .slider .swiper-slide-active img {
+  @apply w-full max-w-[100vw] sm:max-w-[75vw] 2xl:max-w-[70vw];
+}

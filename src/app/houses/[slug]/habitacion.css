@@ -1,0 +1,27 @@
+.habitacion-gallery {
+  @apply grid grid-cols-1 grid-rows-[1fr_96px] lg:h-full;
+}
+
+.habitacion-gallery .habitacion-gallery--main .swiper-wrapper {
+  @apply lg:bg-black lg:h-full !important;
+}
+
+.habitacion-gallery .habitacion-gallery--main .swiper-slide {
+  @apply min-h-[175px] sm:min-h-[225px] md:min-h-[250px] h-full;
+}
+
+.habitacion-gallery .habitacion-gallery--thumbs .swiper-wrapper {
+  @apply justify-between w-full h-full;
+}
+
+.habitacion-gallery .habitacion-gallery--thumbs .swiper {
+  @apply py-2 lg:flex lg:items-stretch;
+}
+
+.habitacion-gallery .habitacion-gallery--thumbs .swiper-slide {
+  @apply h-[60px] lg:h-[80px] opacity-30 transition-opacity;
+}
+
+.habitacion-gallery .habitacion-gallery--thumbs .swiper-slide-thumb-active {
+  @apply opacity-100;
+}

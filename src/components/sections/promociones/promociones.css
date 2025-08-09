@@ -1,0 +1,7 @@
+.promotions .swiper .swiper-slide {
+  @apply transition-opacity opacity-20;
+}
+
+.promotions .swiper .swiper-slide-fully-visible {
+  @apply opacity-100;
+}

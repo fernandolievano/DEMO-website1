@@ -1,0 +1,4 @@
+.booking-buttons:hover .booking-buttons-icon {
+  background-color: #967166;
+  transition: color linear .4s;
+}

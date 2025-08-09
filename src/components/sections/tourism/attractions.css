@@ -1,0 +1,7 @@
+.tourism-attractions .swiper-slide {
+  @apply transition-opacity opacity-20 lg:opacity-100 min-[1105px]:opacity-20;
+}
+
+.tourism-attractions .swiper-slide-fully-visible {
+  @apply opacity-100;
+}

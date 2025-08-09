@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* put custom classes here */
+
+* {
+  -webkit-font-smoothing: antialiased;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  @apply bg-main-bg;
+}
+
+/* loading screen animation */
+@keyframes fillPath {
+  from {
+    fill: transparent;
+  }
+
+  to {
+    fill: #ce9848;
+  }
+}
+
+.loading-animation {
+  animation: fillPath .2s linear;
+}
+
+/* loading screen animation */
+
+/* custom calendar datepicker styles */
+.react-datepicker {
+  @apply rounded-none border border-naranja-3 !important;
+}
+
+.react-datepicker__header {
+  @apply bg-main-bg !important;
+}
+
+.react-datepicker__current-month,
+.react-datepicker__day-name,
+.react-datepicker__day {
+  @apply text-marron-1 !important;
+}
+
+.react-datepicker__day--selected {
+  @apply bg-marron-1 font-bold text-naranja-3 !important;
+}
+
+.react-datepicker__day--keyboard-selected {
+  @apply bg-naranja-3 font-bold text-marron-1 !important;
+}
+
+.react-datepicker__month {
+  @apply bg-blanco-2 !important;
+}
+
+/* custom calendar datepicker styles */
